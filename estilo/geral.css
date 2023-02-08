@@ -126,14 +126,17 @@ footer{
 @media screen and (max-width: 520px){
 
     header{
-        height: 30rem;
+        height: 45%;
         text-indent: 0;
     }
 
 
     header nav{
         flex-direction: column;
+        padding-bottom: 3vh;
+
     }
+
 
     header nav a{
         width: 90%;
