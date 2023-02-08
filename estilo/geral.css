@@ -1,3 +1,30 @@
+html{
+    font-size: 62.5%;
+}
+
 body{
+    margin: 0 auto;
+    font-size: 1.6rem;
+}
+
+header{
+    height: 9rem;
+    margin: -5rem;
     background-color: aqua;
+}
+
+.logo{
+    padding-top: 1rem;
+    padding-left: 8rem;
+    font-size: 7rem;
+}
+
+.logote{
+    margin-left: -1.3rem;
+    font-size: 5rem;
+}
+
+main{
+    margin-top: 10rem;
+    margin-left: 5rem;
 }
