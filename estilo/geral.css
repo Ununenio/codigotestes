@@ -90,6 +90,14 @@ footer{
     background-color: #ef5350;
 }
 
+::-webkit-scrollbar{
+    background-color: rgb(53, 30, 30);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(114, 58, 58);
+}
+
 @media screen and (max-width: 1130px){
 
     header{
