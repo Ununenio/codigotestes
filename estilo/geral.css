@@ -4,11 +4,14 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body{
     margin: 0;
     font-size: 1.6rem;
+
+    overflow-x: hidden;
 
     background-color: #f5f5f5;
 }
@@ -64,20 +67,82 @@ main{
 }
 
 article{
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
+
+    display: flex;
+    justify-content: space-between;
 }
 
-.pequeno{
-    font-size: 1rem;
+.aa-esquerda{
+    top: 4rem;
 }
 
-article a{
-    padding: 2rem;
+.aa-direita{
+    max-width: 60rem;
+
+    top: 3rem;
+}
+
+.aa-esquerda h1{
+    text-indent: 1.5rem;
+}
+
+.aa-esquerda a{
+    margin-top: 7rem;
+    padding: 1.5rem 4rem;
 
     font-size: 2rem;
-    color: aliceblue;
+    color: black;
     text-decoration: none;
-    background-color: #b71c1c;
+    background-color: #b71c1cc7;
+}
+
+.bb-esquerda{
+    max-width: 60rem;
+    top: 7rem;
+}
+
+.bb-direita{
+    top: 7rem;
+}
+
+.estilos h1{
+    text-indent: 2rem;
+}
+
+.bb-direita a{
+    margin-top: 7rem;
+    padding: 1.5rem 4rem;
+
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+    background-color: #b71c1cc7;
+}
+
+.biblioteca h1{
+    text-indent: -0.5rem;
+}
+
+.seta{
+    width: 5.5rem;
+
+    position: fixed;
+    right: 3rem;
+    bottom: 1rem;
+    z-index: 1;
+
+    font-size: 4rem;
+    text-align: center;
+
+    border-radius: 50%;
+    background-color: rgb(228, 139, 139);
+}
+
+.seta a{
+    border-radius: 50%;
+    color: black;
+    text-decoration: none;
 }
 
 footer{
@@ -89,6 +154,7 @@ footer{
 
     background-color: #ef5350;
 }
+
 
 ::-webkit-scrollbar{
     background-color: rgb(53, 30, 30);
@@ -109,6 +175,47 @@ footer{
         text-indent: 0;
     }
     
+}
+
+@media screen and (max-width: 820px){
+
+    article{
+        display: flex;
+        flex-direction: column;
+    }
+
+    article div{
+        margin: auto;
+    }
+
+    .aa-esquerda{
+        top: 0rem;
+    }
+    
+    .aa-direita{
+        top: 0rem;
+    }
+    
+    .aa-esquerda h1{
+        text-indent: 0rem;
+    }
+
+    .bb-esquerda{
+        top: 15rem;
+    }
+    
+    .bb-direita{
+        top: -20rem;
+    }
+    
+    .estilos h1{
+        text-indent: 0rem;
+    }
+
+    .biblioteca h1{
+        text-indent: 0rem;
+    }
+
 }
 
 @media screen and (max-width: 740px){
@@ -146,6 +253,7 @@ footer{
 
 }
 
+
 @media screen and (max-width: 520px){
 
     header{
@@ -172,3 +280,4 @@ footer{
         margin-left: 0.3rem;
     }
 }
+
